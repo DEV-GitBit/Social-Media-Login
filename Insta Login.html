@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width:800px;
+            position: relative;
+            left: 100px;
+        }
+
     #sec1{
         border: 1px solid rgba(0, 0, 0, 0.158);
         display: flex;
@@ -220,36 +228,50 @@
     .grid {
         display: grid;
         grid-auto-flow: column;
-        padding: 20px;
-        grid-area:auto
+        padding-top: 45px;
+        padding-left:270px;
+        grid-area:auto;
+        width: 1050px;
+        justify-content: center;
+        align-items: center;
+    
+
+        
     }
     .grid div {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         color:#737373;
         bottom: 100px;
-        gap: 50px;
+        margin-right: 10px;
+        font-size: 12px;
+
     }       
+    
+    #lang:focus{
+        outline: none;
+        border-color: white;
     }
-
-    /* #sec{
+    #lang{
+        border-color: white;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        position: relative;
+        top: 18px;
+        right:480px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color:#737373;
+        font-size: 12px;
     }
 
-    #sec3 span{
-        display: inline-block;
+    #cr{
+        display: flex;
         position: relative;
-        color:#737373;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        left: 200px;
-        font-size: 12px ;
-        top: 70px;
-    } */
+        top: 35px;
+        right: 470px;
+        width: 170px;
+        font-size: 12px;
+    }
 </style>
 
-</style>
 <body>
     <section id="sec1">
     <div class="container0">
@@ -312,16 +334,34 @@
                 <div class="item 5">Help</div>
                 <div class="item 6">Api</div>
                 <div class="item 7">Privacy</div>
-                <div class="item 8">Locations</div>
-                <div class="item 9">Threads</div>
+                <div class="item 8">Terms</div>
+                <div class="item 9">Locations</div>
                 <div class="item 10">Instagram Lite</div>
+                <div class="item 11">Threads</div>
+                <div class="item 12">Contact</div>
+                <div class="item 13">Uploading & Non-Users</div>
+                <div class="item 14">Meta Verfified</div>
 
 
-                
+            <div>
+                <br><br>
+                <select id="lang">
+                    <option id="eng">English</option>
+                    <option id="eng">Hindi</option>
+                    <option id="eng">Marathi</option>
+                    <option id="eng">Malyalam</option>
+                    <option id="eng">telegu</option>
+                    <option id="eng">Urdu</option>
+                </select>
+            </div>    
+    
+            <div id="cr">
+                <p>© 2024 Instagram from Meta</p>
+            </div>
         </footer>
     </section>
 
     
-    
 </body>
+
 </html>
