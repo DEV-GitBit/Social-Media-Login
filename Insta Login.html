@@ -21,6 +21,7 @@
         /* background:url(instagram.jpg) no-repeat center center/cover; */
         height: 400px;
         width: 350px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
     /* .container img{
         display: flex;
@@ -65,6 +66,8 @@
         border-radius:4px;
         border: 1px solid grey;
         margin-top: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
     }
     #input1 input:focus{
         outline: none;
@@ -82,6 +85,8 @@
         width: 250px;
         border-radius:4px;
         border: 1px solid grey;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
     }
     #input2 input:focus{
         outline: none;
@@ -101,6 +106,8 @@
         border-radius: 10px;
         font-size:medium;
         font-weight:normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
 
     }
     div hr{
@@ -126,18 +133,23 @@
         position: relative;
         right: 90px;
         bottom: 5px;
+        
     }
     .container2 #l_fb{
         display:inline-block;
         position: absolute;
         color: rgb(3, 3, 72);
         right: 96px;
-        /* bottom:px; */
+        top: 302px;
         font-size: 16px;
         font-weight: 500;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
     }
     .fp p{
         color: rgb(0, 55, 107);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
     }
     #sec2{
         border: 1px solid rgba(0, 0, 0, 0.158);
@@ -169,7 +181,7 @@
     }
     #gta p{
         left: 620px;
-        top: 22px;
+        top: 17px;
         display: inline-block;
         position: relative;
     }
@@ -183,9 +195,10 @@
     #giogp img{
         display: inline-block;
         position: relative;
-        width: 120px;
-        left: 545px;
-        top: 30px;
+        width: 110px;
+        height: 37px;
+        left: 550px;
+        top: 20px;
     }
 
     #gifm{
@@ -197,15 +210,43 @@
     #gifm img{
         display: inline-block;
         position: relative;
-        width: 95px;
-        left: 670px;
-        top: -4.5px;
+        width: 105px;
+        height: 37px;
+        left: 665px;
+        top: -17px;
+        border-radius: 4px;
     }
 
-    .sec3 span{
-        color:#737373;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .grid {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 20px;
+        grid-area:auto
     }
+    .grid div {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color:#737373;
+        bottom: 100px;
+        gap: 50px;
+    }       
+    }
+
+    /* #sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sec3 span{
+        display: inline-block;
+        position: relative;
+        color:#737373;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        left: 200px;
+        font-size: 12px ;
+        top: 70px;
+    } */
 </style>
 
 </style>
@@ -263,11 +304,20 @@
 
     <section id="sec3">
         <footer>
-            <nav>
-                <span id="Meta">
-                    Meta
-                </span>
-            </nav>
+            <div class="grid">
+                <div class="item 1">Meta</div>
+                <div class="item 2">About</div>
+                <div class="item 3">Blog</div>
+                <div class="item 4">Jobs</div>
+                <div class="item 5">Help</div>
+                <div class="item 6">Api</div>
+                <div class="item 7">Privacy</div>
+                <div class="item 8">Locations</div>
+                <div class="item 9">Threads</div>
+                <div class="item 10">Instagram Lite</div>
+
+
+                
         </footer>
     </section>
 
